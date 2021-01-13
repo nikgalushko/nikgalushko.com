@@ -1,0 +1,127 @@
+baseURL = "https://thelog.dev/"
+languageCode = "ru-ru"
+defaultContentLanguage = "ru"
+author = "Nikita Galushko"
+title = "logs"
+theme = "hugo-vitae"
+paginate = 5
+enableRobotsTXT = true
+
+copyright = "© Copyright notice | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)"
+
+pygmentsstyle = "colorful"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-185462416-1"
+enableEmoji = true
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+	series = "series"
+
+[params]
+	# Use homepage.md instead of a list of posts
+	homepage = false
+
+	# Add meta keywords in head part (Site Keywords or Tags of Page)
+	keywords = ["golang","it","программирование","архитектура","go","разработка"]
+
+	# Add meta description in head part
+	description = "Блог про программировани, golang и архитектуре"
+
+	# Add pagetitle to homepage <title> tag
+	pagetitle = "Умные мысли про IT и программирование"
+
+	# Add a subtitle to your website
+	subtitle = "Фокусируемся на реальных кейсах, никакой воды"
+
+	# Activate to show authors on pages if available
+	#listAuthor = true
+
+	# Add math typesetting with KaTeX (Global with this Param)
+	math = true
+
+	# Optional 80x80 avatar image.
+	avatar = "/img/me.jpg"
+
+	# Optional favicons for website
+	#favicon = true
+
+	# Add list of sections that should show up on the homepage
+	mainSections = ["post"]
+
+	# Add list of Sections/Types that should no be considered by RSS
+	#nofeedSections = ["post"]
+
+	# Deactivate Taxonomies for specific page types
+	#disableTaxoTypes = [""]
+
+	# Custom CSS applied to default styles. (Path could be "static/css/")
+	#customCSS = "css/custom.css"
+
+# Comments
+#[params.comments]
+# Enable Comments with "true"
+# enabled = true
+
+# Comment provider:
+#   disqus (https://disqus.com)
+#   commento (https://commento.io)
+#engine = "disqus"
+
+# Content types to disable comments on.
+#disableOnTypes = ["page"]
+
+[params.comments.disqus]
+#shortname = "" # Paste the shortname from your Disqus dashboard.
+
+[params.comments.commento]
+#host = "" # Paste the domain of you commento.io system
+
+# Navigation
+#[[menu.main]]
+#name = "Home"
+#url = "/"
+#weight = 1
+
+[[menu.main]]
+name = "Все посты"
+url = "/post"
+weight = 1
+
+[[menu.main]]
+name = "Обо мне"
+url = "/about"
+weight = 2
+
+[[menu.main]]
+name = "Теги"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "Категории"
+url = "/categories"
+weight = 4
+
+# Social Menu
+[[params.social]]
+name = "Github"
+icon = "fab fa-github"
+url = "https://github.com/valenok-husky"
+
+#[[params.social]]
+#name = "Email"
+#icon = "fas fa-envelope"
+#cmd = "mailto:example@example.com"
+
+[[params.social]]
+name = "Twitter"
+icon = "fab fa-twitter"
+url = "https://twitter.com/valenok_husky"
+
+[[params.social]]
+name = "RSS"
+icon = "fas fa-rss"
+url = "/index.xml"

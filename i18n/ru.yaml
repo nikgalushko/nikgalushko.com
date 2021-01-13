@@ -1,0 +1,17 @@
+- id: prevpage
+  translation: "←"
+
+- id: nextpage
+  translation: "→"
+
+- id: nojscomments
+  translation: "Для загрузки комментариев включите, пожалуйста, JavaScript."
+
+- id: authorpretext
+  translation: "Автор:"
+
+- id: 404title
+  translation: "HTTP-404"
+
+- id: 404text
+  translation: "Здесь ничего нет :("
