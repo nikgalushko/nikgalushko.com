@@ -1,8 +1,8 @@
-baseURL = "https://thelog.dev/"
+baseURL = "https://nikgalushko.com/"
 languageCode = "ru-ru"
 defaultContentLanguage = "ru"
 author = "Nikita Galushko"
-title = "logs"
+title = "___"
 theme = "hugo-vitae"
 paginate = 5
 enableRobotsTXT = true
