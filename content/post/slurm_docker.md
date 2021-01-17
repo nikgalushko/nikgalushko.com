@@ -4,8 +4,9 @@ title = "Отзыв о курсе по Docker от Slurm"
 date = "2020-01-08"
 description = "Разбираемся кому пригодится и стоит ли своих денег."
 tags = [
-    "slurm",
-    "docker"
+    "слерм",
+    "docker",
+    "отзыв"
 ]
 categories = [
     "курсы",

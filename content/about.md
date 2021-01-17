@@ -1,7 +1,7 @@
 +++
 title = "Обо мне"
 description = ""
-date = "2020-02-28"
+date = "2020-01-07"
 aliases = ["about","contact"]
 author = "Nikita Galushko"
 +++
