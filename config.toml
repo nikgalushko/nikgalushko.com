@@ -2,7 +2,7 @@ baseURL = "https://nikgalushko.com/"
 languageCode = "ru-ru"
 defaultContentLanguage = "ru"
 author = "Nikita Galushko"
-title = "___"
+title = "👨‍💻"
 theme = "hugo-vitae"
 paginate = 5
 enableRobotsTXT = true
@@ -34,7 +34,7 @@ enableEmoji = true
 	pagetitle = "Умные мысли про IT и программирование"
 
 	# Add a subtitle to your website
-	subtitle = "Фокусируемся на реальных кейсах, никакой воды"
+	subtitle = "Умные мысли про IT и программирование"
 
 	# Activate to show authors on pages if available
 	#listAuthor = true
@@ -59,7 +59,8 @@ enableEmoji = true
 
 	# Custom CSS applied to default styles. (Path could be "static/css/")
 	#customCSS = "css/custom.css"
-
+[markup.goldmark.renderer]
+      unsafe = true
 # Comments
 #[params.comments]
 # Enable Comments with "true"
