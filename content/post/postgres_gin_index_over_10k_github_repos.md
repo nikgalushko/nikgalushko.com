@@ -228,13 +228,13 @@ $ du -sh .postgres/
 
 Есть подозрение, что `pg_trgm` является однопоточным в пределах одной таблицы, но также предполагаем, что лучшего параллелизма (и следовательно лучших результатов) можно добиться при [партиционировании](https://www.postgresql.org/docs/10/ddl-partitioning.html) (разбиением данных на несколько таблиц).
 
-## Investigating slow queries
+## Исследование медленных запросов
 
 Если построить график зависимости количества повторных проверок индекса (ось X) от времени выполнения (ось Y), то можно увидеть, что одним из значимых аспектов замедления выполнения запроса является большее количество повторных проверок индекса:
 
 ![](/img/postgres_trgm_10k_github/11.png)
 
-И если мы взглянем на `[EXPLAIN ANALYZE` одного из таких запросов](https://github.com/hexops/pgtrgm_emperical_measurements/blob/main/query_logs/query-run-3.log#L3-L24), то сможем подтвердить, что `Parallel Bitmap Heap Scan` работает медленно из-за `Rows Removed by Index Recheck`.
+И если мы взглянем на `EXPLAIN ANALYZE` [одного из таких запросов](https://github.com/hexops/pgtrgm_emperical_measurements/blob/main/query_logs/query-run-3.log#L3-L24), то сможем подтвердить, что `Parallel Bitmap Heap Scan` работает медленно из-за `Rows Removed by Index Recheck`.
 
 ## Партиционирование
 
