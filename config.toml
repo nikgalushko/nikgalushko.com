@@ -31,10 +31,10 @@ enableEmoji = true
 	description = "Блог про программировани, golang и архитектуре"
 
 	# Add pagetitle to homepage <title> tag
-	pagetitle = "Умные мысли про IT и программирование"
+	pagetitle = "Про Go и всякое из мира IT"
 
 	# Add a subtitle to your website
-	subtitle = "Умные мысли про IT и программирование"
+	subtitle = "Про Go и всякое из мира IT"
 
 	# Activate to show authors on pages if available
 	#listAuthor = true
