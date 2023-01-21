@@ -2,14 +2,11 @@ baseURL = "https://nikgalushko.com/"
 languageCode = "ru-ru"
 defaultContentLanguage = "ru"
 author = "Nikita Galushko"
-title = "👨‍💻"
-theme = "hugo-vitae"
+title = "Это мой чулан 👨‍💻"
+theme = "smol"
 paginate = 5
 enableRobotsTXT = true
 
-copyright = "© Copyright notice | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)"
-
-pygmentsstyle = "colorful"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -61,68 +58,39 @@ enableEmoji = true
 	#customCSS = "css/custom.css"
 [markup.goldmark.renderer]
       unsafe = true
-# Comments
-#[params.comments]
-# Enable Comments with "true"
-# enabled = true
 
-# Comment provider:
-#   disqus (https://disqus.com)
-#   commento (https://commento.io)
-#engine = "disqus"
+[menu]
+	[[menu.main]]
+	name = "Все посты"
+	url = "/post"
+	weight = 1
 
-# Content types to disable comments on.
-#disableOnTypes = ["page"]
+	[[menu.main]]
+	name = "Обо мне"
+	url = "/about"
+	weight = 2
 
-[params.comments.disqus]
-#shortname = "" # Paste the shortname from your Disqus dashboard.
+	[[menu.main]]
+	name = "Теги"
+	url = "/tags"
+	weight = 3
 
-[params.comments.commento]
-#host = "" # Paste the domain of you commento.io system
+	[[menu.main]]
+	name = "Категории"
+	url = "/categories"
+	weight = 4
 
-# Navigation
-#[[menu.main]]
-#name = "Home"
-#url = "/"
-#weight = 1
+	[[menu.footer]]
+	  name = "Github"
+			url = "https://github.com/nikgalushko"
+			weight = 1 
 
-[[menu.main]]
-name = "Все посты"
-url = "/post"
-weight = 1
+ [[menu.footer]]
+	  name = "Twitter"
+			url = "https://twitter.com/nikgalushko"
+			weight = 2 
 
-[[menu.main]]
-name = "Обо мне"
-url = "/about"
-weight = 2
-
-[[menu.main]]
-name = "Теги"
-url = "/tags"
-weight = 3
-
-[[menu.main]]
-name = "Категории"
-url = "/categories"
-weight = 4
-
-# Social Menu
-[[params.social]]
-name = "Github"
-icon = "fab fa-github"
-url = "https://github.com/nikgalushko"
-
-#[[params.social]]
-#name = "Email"
-#icon = "fas fa-envelope"
-#cmd = "mailto:example@example.com"
-
-[[params.social]]
-name = "Twitter"
-icon = "fab fa-twitter"
-url = "https://twitter.com/nikgalushko"
-
-[[params.social]]
-name = "RSS"
-icon = "fas fa-rss"
-url = "/index.xml"
+	[[menu.footer]]
+	  name = "Telegram"
+			url = "https://t.me/nikgalushko"
+			weight = 3 
