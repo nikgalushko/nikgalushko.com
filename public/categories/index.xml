@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Это мой чулан 👨‍💻</title>
+    <link>https://nikgalushko.com/categories/</link>
+    <description>Recent content in Categories on Это мой чулан 👨‍💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nikgalushko.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://nikgalushko.com/categories/go/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kafka</title>
+      <link>https://nikgalushko.com/categories/kafka/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/kafka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postgres</title>
+      <link>https://nikgalushko.com/categories/postgres/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/postgres/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Перевод</title>
+      <link>https://nikgalushko.com/categories/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Курсы</title>
+      <link>https://nikgalushko.com/categories/%D0%BA%D1%83%D1%80%D1%81%D1%8B/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/%D0%BA%D1%83%D1%80%D1%81%D1%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Отзыв</title>
+      <link>https://nikgalushko.com/categories/%D0%BE%D1%82%D0%B7%D1%8B%D0%B2/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/categories/%D0%BE%D1%82%D0%B7%D1%8B%D0%B2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

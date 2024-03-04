@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Это мой чулан 👨‍💻</title>
+    <link>https://nikgalushko.com/tags/vim/</link>
+    <description>Recent content in Vim on Это мой чулан 👨‍💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nikgalushko.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Делаем из Vim IDE для Golang</title>
+      <link>https://nikgalushko.com/post/vim_as_golang_ide/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://nikgalushko.com/post/vim_as_golang_ide/</guid>
+      <description>Предисловие Уверен, у кого-то возникнет вопрос: «Зачем в 2021-ом пользоваться -vim- neovim, когда есть замечательный Goland?». Я до какого-то времени сам пользовался только продуктами от JetBrains, но вот уже более 1.5 лет пишу исключительно в vim.&#xA;Основной причиной для моего перехода с Goland стала его прожорливость. Отдавать по 3-4 Гб программе, которая просто подсказывает мне названия методов, запускает тесты и реализует «Go to definition», очень расточительно. Вкупе с непонятной политикой индексации проекта, когда у тебя в момент взывают куллеры, а батарейка на глазах тает, привело меня к vim.</description>
+    </item>
+  </channel>
+</rss>
