@@ -4,7 +4,8 @@ defaultContentLanguage = "ru"
 author = "Nikita Galushko"
 title = "Это мой чулан 👨‍💻"
 theme = "smol"
-paginate = 5
+[pagination]
+pagerSize = 5
 enableRobotsTXT = true
 
 pygmentscodefences = true
