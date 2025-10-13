@@ -124,3 +124,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 ```
 Устанавливаем уже знакомой командой `nvim +PlugInstall`. Остался последний шаг установить [the_silver_searcher](https://github.com/ggreer/the_silver_searcher). Тут тоже все просто: `brew install the_silver_searcher`. Теперь мы можем искать по всему проекту простой командой `:Ag <то что хотим найти>`.
+
+-----
+
+**Автор**: Никита Галушко - Golang инженер, специализирующийся на производительности и распределённых системах.
+Больше технических разборов в Telegram: https://t.me/b1tw1se

@@ -43,3 +43,8 @@ categories = [
 1. [Описательная статистика перформанс-распределений](https://habr.com/ru/companies/jugru/articles/722342/)
 2. [Fair Benchmarking in Database Performance Testing: Navigating Common Pitfalls](https://hannes.muehleisen.org/publications/DBTEST2018-performance-testing.pdf)
 3. [Ускоряем железо и OS под PostgreSQL. Михал Жилин. Postgres Professional](https://youtu.be/Lh74Vjb0Dm4)
+
+---
+
+**Автор**: Никита Галушко - Golang инженер, специализирующийся на производительности и распределённых системах.
+Больше технических разборов в Telegram: https://t.me/b1tw1se
