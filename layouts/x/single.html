@@ -1,0 +1,54 @@
+{{ define "main" }}
+<main class="x-page">
+	<article>
+		<header class="x-page-header">
+			<p><a href="{{ "/x/" | relLangURL }}">← Все треды</a></p>
+			<h1>{{ .Title }}</h1>
+			<p class="x-controls">
+				<button type="button" class="x-toggle" data-xview-toggle aria-pressed="false">Показать перевод</button>
+			</p>
+		</header>
+		<ol class="x-thread" lang="en">
+			{{ range .Params.tweets }}
+			<li class="x-post">
+				<div class="x-post-meta">
+					<strong>{{ .author }}</strong>
+					<a href="https://x.com/{{ .handle }}" rel="noopener">@{{ .handle }}</a>
+					<time datetime="{{ .created_at }}">{{ (time.AsTime .created_at).Format "2006-01-02 15:04" }}</time>
+				</div>
+				<div class="x-text x-original">{{ .text | htmlEscape | replaceRE "\r?\n" "<br>" | safeHTML }}</div>
+				<div class="x-text x-translation" lang="ru" hidden>{{ .translation | htmlEscape | replaceRE "\r?\n" "<br>" | safeHTML }}</div>
+				{{ with .media }}
+				<div class="x-media">
+					{{ range . }}
+					{{ $resource := $.Resources.GetMatch .path }}
+					{{ if $resource }}
+						{{ if or (eq .type "video") (eq .type "animated_gif") }}
+						<video controls preload="none"{{ with .alt }} aria-label="{{ . }}"{{ end }}><source src="{{ $resource.RelPermalink }}"></video>
+						{{ else }}
+						<figure><img src="{{ $resource.RelPermalink }}" alt="{{ .alt }}" loading="lazy"></figure>
+						{{ end }}
+					{{ end }}
+					{{ end }}
+				</div>
+				{{ end }}
+			</li>
+			{{ end }}
+		</ol>
+		<p class="x-source"><a href="{{ .Params.source }}" rel="noopener">Открыть исходный тред на X</a></p>
+	</article>
+</main>
+<script>
+(() => {
+	const button = document.querySelector("[data-xview-toggle]");
+	if (!button) return;
+	button.addEventListener("click", () => {
+		const showTranslation = button.getAttribute("aria-pressed") !== "true";
+		button.setAttribute("aria-pressed", String(showTranslation));
+		button.textContent = showTranslation ? "Показать оригинал" : "Показать перевод";
+		document.querySelectorAll(".x-original").forEach((item) => item.hidden = showTranslation);
+		document.querySelectorAll(".x-translation").forEach((item) => item.hidden = !showTranslation);
+	});
+})();
+</script>
+{{ end }}
