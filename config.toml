@@ -42,6 +42,7 @@ enableEmoji = true
 
 	# Optional 80x80 avatar image.
 	avatar = "/img/me.jpg"
+	customCSS = ["css/x.css"]
 
 	# Optional favicons for website
 	#favicon = true
@@ -80,6 +81,11 @@ enableEmoji = true
 	name = "Категории"
 	url = "/categories"
 	weight = 4
+
+	[[menu.main]]
+	name = "Треды"
+	url = "/x"
+	weight = 5
 
 	[[menu.footer]]
 	  name = "Github"
